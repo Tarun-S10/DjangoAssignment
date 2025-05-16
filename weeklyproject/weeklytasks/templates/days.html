@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ day|title }}'s Task</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>{{ day|title }}'s Task</h1>
+    <p>{{ task }}</p>
+
+    <a href="{% url 'index' %}" class="back-link">← Back to Index</a>
+</body>
+</html>
